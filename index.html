@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | CSE Student & Developer</title>
+    <style>
+        /* Developer Dark Theme CSS */
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0284c7;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(15, 23, 42, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            text-align: left;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0 0 10px 0;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            font-weight: normal;
+            margin-top: 0;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: var(--accent);
+            color: #0f172a;
+            padding: 10px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            color: #fff;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            margin-left: 10px;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+        }
+
+        h3.section-title {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            margin-bottom: 40px;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid #334155;
+            color: var(--text-main);
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 25px;
+            border: 1px solid #334155;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .project-card h4 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: var(--text-main);
+        }
+
+        .project-tech {
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-family: monospace;
+        }
+
+        .project-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .project-links {
+            margin-top: 20px;
+        }
+
+        .project-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 0.9rem;
+        }
+
+        .project-links a:hover {
+            color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #334155;
+            color: var(--text-muted);
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">DevPortfolio.</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="about">
+        <p style="color: var(--accent); margin-bottom: 5px;">Hi, my name is</p>
+        <h1>Harshal Marathe</h1>
+        <h2>3rd Year CSE Student & Software Developer</h2>
+        <p>I specialize in building scalable web applications and solving complex problems. Currently studying at Mumbai university and looking for software engineering internship opportunities.</p>
+        <div style="margin-top: 30px;">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="resume.pdf" class="btn btn-outline" target="_blank">View Resume</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3 class="section-title">Technical Skills</h3>
+        <div class="skills-grid">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">HTML / CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">SQL / MySQL</span>
+            <span class="skill-tag">Git & GitHub</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h3 class="section-title">Featured Projects</h3>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <h4>E-Commerce API</h4>
+                <div class="project-tech">Node.js | Express | MongoDB | JWT</div>
+                <p>A fully functional RESTful API for an e-commerce platform featuring user authentication, product management, and shopping cart logic.</p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/project1" target="_blank">🔗 GitHub Code</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h4>Weather Application</h4>
+                <div class="project-tech">React | OpenWeather API | CSS Grid</div>
+                <p>A responsive web application that fetches real-time weather data based on user location or city search, featuring a 5-day forecast.</p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/project2" target="_blank">🔗 GitHub</a>
+                    <a href="#" target="_blank">🌐 Live Demo</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h4>Student Management System</h4>
+                <div class="project-tech">Java | JavaFX | MySQL</div>
+                <p>A desktop application built for university admins to track student attendance, grades, and enrollments using a relational database.</p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/project3" target="_blank">🔗 GitHub Code</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" style="text-align: center; max-width: 600px;">
+        <h3 class="section-title">Get In Touch</h3>
+        <p>I am currently looking for summer internships and open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+        <a href="mailto:your.email@example.com" class="btn" style="display: inline-block; margin-top: 20px;">Say Hello</a>
+        <div style="margin-top: 40px;">
+            <a href="https://github.com/yourusername" target="_blank" style="color: var(--text-muted); margin: 0 10px; text-decoration: none;">GitHub</a> | 
+            <a href="https://linkedin.com/in/harshal-marathe24" target="_blank" style="color: var(--text-muted); margin: 0 10px; text-decoration: none;">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 HarshalMarathe. Built with HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>
