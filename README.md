@@ -4,7 +4,7 @@ Welcome to the repository for my professional portfolio website! This project sh
 
  🌐 Live Demo
 
-Check out the live site here: https://github.com/HarshalMaratheCode/My-First-Portfolio 
+Check out the live site here:  https://harshalmarathecode.github.io/My-First-Portfolio/
 
 ---
 
@@ -22,11 +22,4 @@ The portfolio features several of my key CSE projects, including:
 2. Weather Application: A responsive web application that fetches real-time weather data based on user location or city search, featuring a 5-day forecast.
 3. Student Management System: A desktop application built for university admins to track student attendance, grades, and enrollments using a relational database.
 
----
-
-## 🚀 How to Run Locally
-If you'd like to run this project on your local machine:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com 
+##  🚧The Website is still into the under construction 🚧
