@@ -3,46 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>My Portfolio</title>
     <style>
-        /* Adding some animations */
-        .fade-in {
-            animation: fadeIn 1s ease-in;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        section {
+            padding: 2rem;
+        }
+        .portfolio-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 1rem 0;
+            padding: 1rem;
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1 class="fade-in">Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to My Portfolio</h1>
     </header>
-    <section id="about">
-        <h2 class="fade-in">About Me</h2>
-        <p>My name is Harshal Marathe, and I am a passionate developer.</p>
-    </section>
-    <section id="projects">
-        <h2 class="fade-in">My Projects</h2>
-        <ul>
-            <li>Project 1</li>
-            <li>Project 2</li>
-            <li>Project 3</li>
-        </ul>
+    <section>
+        <div class="portfolio-item">
+            <h2>Project 1</h2>
+            <p>Description of project 1.</p>
+        </div>
+        <div class="portfolio-item">
+            <h2>Project 2</h2>
+            <p>Description of project 2.</p>
+        </div>
     </section>
     <footer>
-        <h2 class="fade-in">Contact</h2>
-        <p>Email: harshal@example.com</p>
+        <p>© 2026 Harshal Marathe. All rights reserved.</p>
     </footer>
 </body>
 </html>
