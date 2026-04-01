@@ -1,35 +1,48 @@
-.fade-in {
-  animation: fadeIn 2s;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.slide-in {
-  animation: slideIn 1s;
-}
-
-@keyframes slideIn {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
-}
-
-.button:hover {
-  background-color: #3498db;
-  color: white;
-}
-
-.card {
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.skills {
-  display: flex;
-  justify-content: space-around;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Adding some animations */
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2 class="fade-in">About Me</h2>
+        <p>My name is Harshal Marathe, and I am a passionate developer.</p>
+    </section>
+    <section id="projects">
+        <h2 class="fade-in">My Projects</h2>
+        <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+        </ul>
+    </section>
+    <footer>
+        <h2 class="fade-in">Contact</h2>
+        <p>Email: harshal@example.com</p>
+    </footer>
+</body>
+</html>
